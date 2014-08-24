@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-08-24T12:36:02+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://andymatos.github.io/atom.xml" rel="self"/>
+  <link href="http://andymatos.github.io/"/>
+  <updated>2014-08-24T12:43:10+08:00</updated>
+  <id>http://andymatos.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[First Blog on Github]]></title>
-    <link href="http://yoursite.com/blog/2014/08/24/first-blog-in-github/"/>
-    <updated>2014-08-24T12:30:00+08:00</updated>
-    <id>http://yoursite.com/blog/2014/08/24/first-blog-in-github</id>
+    <title type="html"><![CDATA[First Blog in Github]]></title>
+    <link href="http://andymatos.github.io/blog/2014/08/24/first-blog-in-github/"/>
+    <updated>2014-08-24T00:00:00+08:00</updated>
+    <id>http://andymatos.github.io/blog/2014/08/24/first-blog-in-github</id>
     <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Welcome to my blog on github!&quot;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
