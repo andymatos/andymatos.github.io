@@ -10,4 +10,4 @@ author:Andy
 ```javascript
 alert("Welcome to my blog on github!");
 ```
-{% img E:\\picture\\hayley.jpg/1280/876 %}
+{% img /images/hayley.jpg 1280 876 %}
