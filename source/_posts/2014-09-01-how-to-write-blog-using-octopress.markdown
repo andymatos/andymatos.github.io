@@ -96,6 +96,9 @@ git@github.com:username/username.github.io.git
 4.rake deploy
 
 5.commit the source 
+
 git add .
+
 git commit -m 'your message'
+
 git push origin source
