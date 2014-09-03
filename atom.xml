@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://andymatos.github.io/atom.xml" rel="self"/>
   <link href="http://andymatos.github.io/"/>
-  <updated>2014-09-01T20:42:25+08:00</updated>
+  <updated>2014-09-03T19:52:50+08:00</updated>
   <id>http://andymatos.github.io/</id>
   <author>
     <name><![CDATA[Andy Matos]]></name>
@@ -12,6 +12,104 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Get to Google]]></title>
+    <link href="http://andymatos.github.io/blog/2014/09/03/how-to-get-to-google/"/>
+    <updated>2014-09-03T19:47:06+08:00</updated>
+    <id>http://andymatos.github.io/blog/2014/09/03/how-to-get-to-google</id>
+    <content type="html"><![CDATA[<p>1.google.com.im</p>
+
+<p><a href="http://www.Google.com.im/">http://www.Google.com.im/</a></p>
+
+<p>2.Googlestable</p>
+
+<p><a href="http://www.googlestable.com/">http://www.googlestable.com/</a></p>
+
+<p>but only normal and picture search</p>
+
+<p>3.Googleout</p>
+
+<p><a href="http://www.googleout.com/">http://www.googleout.com/</a></p>
+
+<p>only web pages search</p>
+
+<p>4.IP address</p>
+
+<p><a href="https://github.com/justjavac/Google-IPs">https://github.com/justjavac/Google-IPs</a></p>
+
+<p>5.chrome setting</p>
+
+<p>chrome://flags/</p>
+
+<p>启用「实验性 QUIC 协议」和「经由实验性 QUIC 协议发出的 HTTPS 请求」</p>
+
+<p>7.america online</p>
+
+<p><a href="http://www.aol.com/">http://www.aol.com/</a></p>
+
+<p>the search result is same as google</p>
+
+<p>8.Baigoogledu.com</p>
+
+<p><a href="http://www.baigoogledu.com/">http://www.baigoogledu.com/</a></p>
+
+<p>9.Startpage</p>
+
+<p><a href="https://startpage.com/">https://startpage.com/</a></p>
+
+<p>the result is based on google</p>
+
+<p>10.glgoo</p>
+
+<p><a href="https://www.glgoo.com/">https://www.glgoo.com/</a></p>
+
+<p>search for scholar <a href="http://scholar.glgoo.com/">http://scholar.glgoo.com/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[LaTeXTools for Sublime]]></title>
+    <link href="http://andymatos.github.io/blog/2014/09/01/latextools-for-sublime/"/>
+    <updated>2014-09-01T21:37:08+08:00</updated>
+    <id>http://andymatos.github.io/blog/2014/09/01/latextools-for-sublime</id>
+    <content type="html"><![CDATA[<h1>Install</h1>
+
+<h2>Install sublime package control</h2>
+
+<p>for sublime 3</p>
+
+<blockquote><p>The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.</p>
+
+<p>import urllib.request,os,hashlib; h = &lsquo;7183a2d3e96f11eeadd761d777e62404&rsquo; + &lsquo;e330c659d4bb41d3bdf022e94cab3cd0&rsquo;; pf = &lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo; + pf.replace(&lsquo; &rsquo;, &lsquo;%20&rsquo;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&lsquo;Error validating download (got %s instead of %s), please try manual install&rsquo; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write(by)</p></blockquote>
+
+<h2>Get LaTeXTools</h2>
+
+<blockquote><p>use package control (ctrl+shift+p) and look for LaTeXTools.</p>
+
+<p>If you are installing LaTeXTools for the first time, you need to create a configuration file, LaTeXTools.sublime-settings, in your User directory (off the Packages) directory. To do so, open the command palette from the Tools menu, search for &ldquo;LaTeXTools: Reconfigure and migrate settings,&rdquo; and hit Return. That&rsquo;s it! See the Settings section for details on configuration options.</p></blockquote>
+
+<h2>Configuration</h2>
+
+<blockquote><p>add the SumatraPDF directory to your PATH</p>
+
+<p>On Windows, we should set up inverse search in Sumatra PDF. open a command-line console (run cmd.exe), and issue the following command:</p>
+
+<p>sumatrapdf.exe -inverse-search &ldquo;&#34;C:\Program Files\Sublime Text 2\sublime_text.exe\&rdquo; \&ldquo;%f:%l\&rdquo;&#8221;</p>
+
+<p>edit the file LaTeX.sublime-settings in the User directory to make sure that the configuration reflects your preferred TeX distribution. Open the file and scroll down to the section titled &ldquo;Platform settings.&rdquo; Look at the block for your OS, namely windows. Within that block, verify that the texpath setting is correct; for MiKTeX, you can leave this empty, i.e., &ldquo;&rdquo;. If you do specify a path, note that it must include the system path variable, i.e., $PATH (this syntax seems to be OK). Also verify that the distro setting is correct: the possible values are &ldquo;miktex&rdquo; and &ldquo;texlive&rdquo;.</p></blockquote>
+
+<h2>Keybindings</h2>
+
+<blockquote><p>Most LaTeXTools facilities are triggered using Ctrl+l (Windows, Linux)</p>
+
+<p>Compilation uses the standard ST &ldquo;build&rdquo; keybinding, i.e. Ctrl-b on Windows and Linux</p>
+
+<p>For example: to jump to the point in the PDF file corresponding to the current cursor position, use Ctrl-l, j: that is, hit Ctrl-l, then release both the Ctrl and the l keys, and quickly type the j key (OS X users: replace Ctrl with Cmd). To wrap the selected text in an \emph{} command, use Ctrl-l, Ctrl-e: that is, hit Ctrl-l, release both keys, then hit Ctrl-e</p>
+
+<p>Ctrl-l (Cmd-l on OS X) is the standard ST keybinding for &ldquo;expand selection to line&rdquo;; this is remapped to Ctrl-l,Ctrl-l (Cmd-l,Cmd-l on OS X). This is the only standard ST keybinding that is affected by the plugin&mdash;an advantage of new-style keybindings.</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Write Blog Using Octopress]]></title>
